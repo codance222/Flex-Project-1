@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+
+body {
+  height: 525px;;
+  display:flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  font: 20px sans-serif;
+  color: lightgray;
+  width: 850px;
+  border: 10px solid black;
+  margin-left: 150px;
+  margin-top: 50px;
+  
+
+}
+header {
+  background-color: rgb(206, 54, 206);
+  height:30%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+main {
+  display:flex;
+  flex-direction: row;
+  height:100%;
+  justify-content: space-between;
+  margin-bottom:5px;
+}
+nav {
+  /* list-style: none; */
+ /* justify-content: flex-start; */
+  width:17%;
+  background-color: rgb(221, 76, 221);
+  display:flex;
+  /* align-items:center; */
+  justify-content: left;
+  /* margin-right:5px; */
+}
+
+footer {
+  background-color: rgb(206, 54, 206);
+  height:30%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 700px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgb(231, 113, 231);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(231, 113, 231);
+  color: white;
+  transform: rotateY(180deg);
+}
+li {
+   
+    list-style-type: none;
+          float: left;
+          font-weight:bolder;
+}
+
+            
+        
+        li a {
+           
+          display: block;
+          color: lightgray;
+          padding: 19px 16px;
+          text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        Header
+      
+    </header>
+    <main>
+      <nav>
+        <ul>   
+            <li><a href="#">Home </a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+           
+        </ul>
+       
+      </nav>
+      <article>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front"><br><br>
+                 <h2>Thee Most Awesome Cohort</h2> 
+                <p>web-pt-04-2022     </p> 
+                <h2>We are</h2> 
+                <p>"Committed to The Code"</p>
+              </div>
+              <div class="flip-card-back">
+           <img src="lion3.png" alt=""style="width:600px;height:350px;"> <br><br> main content
+      </article>
+     
+    </main>
+    <footer>
+      footer
+    </footer>
+    
+    <script>
+        document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
+    </script>
+  </body>
+</html>
